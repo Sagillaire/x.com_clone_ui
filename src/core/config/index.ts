@@ -1,1 +1,2 @@
-export * from './FontsConfig'
+export * from './FontsConfig';
+export * from './CustomClient';

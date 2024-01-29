@@ -1,7 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { InterFont } from "@/core/config";
+import { CustomClient, InterFont } from "@/core/config";
 
 export const metadata: Metadata = {
   title: "X Clone",
@@ -12,7 +12,9 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body className={`${InterFont.className} w-full h-screen`}>
-        {children}
+        <CustomClient>
+          {children}
+        </CustomClient>
       </body>
     </html>
   );
