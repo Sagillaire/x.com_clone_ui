@@ -8,7 +8,7 @@ import { PostActions, PostMediaComponent, Text, Title } from '.';
 
 export const Post: FC<{ post: IPosts }> = ({ post }) => {
   return (
-    <article className='flex w-full max-h-full p-4 pb-2 border-b-[1px] border-[#1C1C1C]'>
+    <article className='flex w-full max-h-full p-4 pb-2 border-b-[1px] border-[#343434]'>
       <div className='w-10z h-full mr-3'>
         <Image
           width={40}

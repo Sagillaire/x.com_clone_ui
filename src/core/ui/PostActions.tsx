@@ -7,7 +7,7 @@ export const PostActions: FC<{ post: IPosts }> = ({ post }) => {
     <div className='flex justify-between pt-2 items-center'>
       {actions.map((action) => (
         <div className='flex items-center' key={action.id}>
-          <div key={action.id} className={`${action.hover} p-2 rounded-full cursor-pointer text-[1C1C1C1]`}>
+          <div key={action.id} className={`${action.hover} p-2 rounded-full cursor-pointer text-[#343434]`}>
             <action.icon />
           </div>
           <span className='text-xs'>{formatNumberStats(post.tweet?.[action.id as never])}</span>
